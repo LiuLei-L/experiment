@@ -1,6 +1,6 @@
 # Experiment
 
-Hypixel SkyBlock 实验台自动求解模组，支持 Chronomatron、Ultrasequencer 和 Superpairs 三款小游戏，自带 Serums 药水模式自动停手。
+Hypixel SkyBlock 实验台自动求解模组，支持 Chronomatron、Ultrasequencer 和 Superpairs 三款小游戏，新增 Serums 模式自动停止。
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-26.1.2-green)
 ![Fabric](https://img.shields.io/badge/Fabric%20Loader-0.19.0+-blue)
