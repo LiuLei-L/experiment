@@ -1,54 +1,54 @@
 # Experiment
 
-Hypixel SkyBlock 实验台自动求解模组，支持 Chronomatron、Ultrasequencer 和 Superpairs，自带 Serums 药水模式自动停手。
+Auto Experimentation Table solver for Hypixel SkyBlock. Supports Chronomatron, Ultrasequencer, and Superpairs, with a Serums mode that auto-stops after capping out on Metaphysical Serums.
 
-## 功能
+## Features
 
-- **Chronomatron** - 自动记忆闪烁顺序，玩家回合按顺序点击
-- **Ultrasequencer** - 扫描染料编号，按从小到大顺序点击
-- **Superpairs** - 自动配对相同物品（默认关闭）
-- **Serums 模式** - 吃满 3 瓶形而上药水后自动停手并退出界面
+- **Chronomatron** - Remembers the glowing sequence and clicks it in order on your turn
+- **Ultrasequencer** - Scans dye numbers and clicks them from lowest to highest
+- **Superpairs** - Auto-matches identical items (disabled by default)
+- **Serums mode** - Automatically stops and closes the GUI once you've gotten 3 Metaphysical Serums
 
-## 安装
+## Installation
 
-1. 安装 [Fabric Loader](https://fabricmc.net/use/installer/) 和 [Fabric API](https://modrinth.com/mod/fabric-api)
-2. 下载 `experiment-0.1.0.jar` 放入 `.minecraft/mods/` 文件夹
-3. 启动游戏
+1. Install [Fabric Loader](https://fabricmc.net/use/installer/) and the [Fabric API](https://modrinth.com/mod/fabric-api)
+2. Place `experiment-0.1.0.jar` in your `.minecraft/mods/` folder
+3. Launch the game
 
-## 命令
+## Commands
 
-所有命令以 `/experiment` 开头：
+All commands start with `/experiment`:
 
-| 命令 | 说明 |
-|------|------|
-| `/experiment` | 查看当前状态 |
-| `/experiment help` | 查看帮助和 GitHub 链接 |
-| `/experiment on` / `off` | 开启 / 关闭模组 |
-| `/experiment delay <ms>` | 设置点击延迟，默认 250ms |
-| `/experiment superpairs on` / `off` | 开启 / 关闭 Superpairs |
-| `/experiment serums on` / `off` | 开启 / 关闭 Serums 模式 |
+| Command | Description |
+|---------|-------------|
+| `/experiment` | Show current status |
+| `/experiment help` | Show help and GitHub link |
+| `/experiment on` / `off` | Enable / disable the mod |
+| `/experiment delay <ms>` | Set click delay, default 250ms |
+| `/experiment superpairs on` / `off` | Enable / disable Superpairs |
+| `/experiment serums on` / `off` | Enable / disable Serums mode |
 
-## Serums 模式
+## Serums Mode
 
-开启后，模组会在拿满 3 瓶 Metaphysical Serum 的那一轮自动停手，并自动退出实验台。
+When enabled, the mod automatically stops and exits the Experimentation Table once you've received 3 Metaphysical Serums, since no further serums will be granted.
 
-- Chronomatron：第 9 轮后停止
-- Ultrasequencer：第 6 轮后停止
-- Superpairs：不受影响
+- Chronomatron: stops after round 9
+- Ultrasequencer: stops after round 6
+- Superpairs: not affected
 
-适合刷经验药水的时候使用，效率最高。
+Use this when farming Serums for maximum efficiency.
 
-## 构建
+## Building
 
 ```bash
 ./gradlew build
 ```
 
-构建产物在 `build/libs/` 目录下。
+Output jars are in `build/libs/`.
 
-## 配置
+## Configuration
 
-配置文件：`.minecraft/config/experiment.json`
+Config file: `.minecraft/config/experiment.json`
 
 ```json
 {
@@ -59,11 +59,11 @@ Hypixel SkyBlock 实验台自动求解模组，支持 Chronomatron、Ultrasequen
 }
 ```
 
-也可以直接在游戏内用命令修改。
+All settings can also be changed in-game via commands.
 
-## 免责声明
+## Disclaimer
 
-本模组仅为客户端辅助工具，所有操作均在本地完成。使用风险由使用者自行承担，请遵守服务器规则。
+This is a client-side mod that only reads container contents and simulates slot clicks. Use at your own risk and follow server rules.
 
 ## License
 
