@@ -9,7 +9,11 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLevelEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
+
+import java.net.URI;
 
 /** Experiment: Auto Experiment (Experimentation Table solver) mod. */
 public final class ExperimentMod implements ClientModInitializer {
@@ -84,8 +88,11 @@ public final class ExperimentMod implements ClientModInitializer {
             "/experiment serums on/off  Serums模式开关"
         ).withStyle(ChatFormatting.GRAY));
         source.sendFeedback(Component.literal(
-            "📦 GitHub: " + GITHUB_URL
-        ).withStyle(ChatFormatting.YELLOW));
+            "GitHub: " + GITHUB_URL
+        ).setStyle(Style.EMPTY
+            .withColor(ChatFormatting.YELLOW)
+            .withClickEvent(new ClickEvent.OpenUrl(URI.create(GITHUB_URL)))
+            .withUnderlined(true)));
         return 1;
     }
 
