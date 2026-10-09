@@ -1,0 +1,24 @@
+.gradle
+build
+out
+classes
+
+# idea
+.idea
+*.iws
+*.iml
+*.ipr
+
+# vscode
+.vscode
+*.code-workspace
+
+# Mac
+.DS_Store
+
+# eclipse
+*.launch
+.classpath
+.project
+.settings/
+.metadata
