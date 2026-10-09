@@ -22,7 +22,7 @@ final class ExperimentSolver {
     }
 
     private static final int SERUMS_CHRONO_ROUND_CAP = 9;
-    private static final int SERUMS_ULTRA_ROUND_CAP = 6;
+    private static final int SERUMS_ULTRA_ROUND_CAP = 5;
 
     private Mode mode = Mode.NONE;
     private final List<Integer> chronomatron = new ArrayList<>();
