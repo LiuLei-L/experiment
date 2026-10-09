@@ -2,6 +2,12 @@
 
 Auto Experimentation Table solver for Hypixel SkyBlock. Supports Chronomatron, Ultrasequencer, and Superpairs, with a Serums mode that auto-stops after capping out on Metaphysical Serums.
 
+![Minecraft](https://img.shields.io/badge/Minecraft-26.1.x-green)
+![Fabric](https://img.shields.io/badge/Fabric%20Loader-0.19.0%2B-blue)
+![Downloads](https://img.shields.io/github/downloads/LiuLei-L/experiment/total?label=downloads)
+![Release](https://img.shields.io/github/v/release/LiuLei-L/experiment)
+![License](https://img.shields.io/github/license/LiuLei-L/experiment)
+
 ## Features
 
 - **Chronomatron** - Remembers the glowing sequence and clicks it in order on your turn
