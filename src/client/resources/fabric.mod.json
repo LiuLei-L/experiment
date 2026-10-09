@@ -5,6 +5,11 @@
   "name": "Experiment",
   "description": "Auto Experiment for Hypixel SkyBlock: solves Experimentation Table games (Chronomatron, Ultrasequencer, Superpairs). Configurable via /experiment commands.",
   "authors": ["LiuLei"],
+  "contact": {
+    "homepage": "https://github.com/LiuLei-L/experiment",
+    "sources": "https://github.com/LiuLei-L/experiment",
+    "issues": "https://github.com/LiuLei-L/experiment/issues"
+  },
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
